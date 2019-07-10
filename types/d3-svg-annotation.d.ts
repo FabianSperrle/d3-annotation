@@ -70,6 +70,7 @@ export default class Annotation<T> {
   updateOffset(): void;
   update(): void;
   updatedAccessors(): void;
+  on(type: string, callback: (annotation) => void): Annotation<T>;
 }
 
 export class Type<T> {
