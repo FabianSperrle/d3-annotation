@@ -44,6 +44,7 @@ export default class Annotation<T> {
     dx: number;
     dy: number;
   };
+  data: T;
 
   constructor({ x, y, dy, dx, data, type, subject, connector, note, disable, id, className }: {
     x?: number;
